@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvSettingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil y Configuración"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/etEditName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Cambiar Nombre de Usuario"
+            app:layout_constraintTop_toBottomOf="@+id/tvSettingsTitle"
+            android:textColorHint="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/etEditEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Cambiar Correo"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/etEditName"
+            android:textColorHint="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnUpdateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Actualizar Datos"
+            app:layout_constraintTop_toBottomOf="@+id/etEditEmail" />
+
+        <TextView
+            android:id="@+id/tvSensorsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Configuración de Alertas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnUpdateProfile"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/tvSensitivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Sensibilidad de Sacudida (Shake)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSensorsTitle"
+            android:textColor="#FFFFFF"/>
+
+        <SeekBar
+            android:id="@+id/seekBarSensitivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:max="30"
+            android:progress="12"
+            app:layout_constraintTop_toBottomOf="@+id/tvSensitivity" />
+
+        <CheckBox
+            android:id="@+id/cbTriggerShake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:text="Activar por Sacudida Brusca"
+            app:layout_constraintTop_toBottomOf="@+id/seekBarSensitivity"
+            android:textColor="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/cbTriggerVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Activar por Botón Volumen (2 veces)"
+            app:layout_constraintTop_toBottomOf="@+id/cbTriggerShake"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#FF9800"
+            android:text="Cerrar Sesión"
+            app:layout_constraintTop_toBottomOf="@+id/cbTriggerVolume" />
+
+        <Button
+            android:id="@+id/btnDeleteAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#F44336"
+            android:text="Eliminar Cuenta"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogout" />
+
+        <Button
+            android:id="@+id/btnBackMainSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al Menú Principal"
+            style="?android:attr/borderlessButtonStyle"
+            app:layout_constraintTop_toBottomOf="@+id/btnDeleteAccount"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

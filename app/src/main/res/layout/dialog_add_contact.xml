@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient">
+
+    <EditText
+        android:id="@+id/inputContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Completo"
+        android:textColorHint="#FFFFFF"/>
+    <EditText
+        android:id="@+id/inputContactPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Número de Teléfono"
+        android:textColorHint="#FFFFFF"/>
+    <EditText
+        android:id="@+id/inputContactEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Correo Electrónico (Opcional)"
+        android:textColorHint="#FFFFFF"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="ps_dark_blue">#1A1A40</color>
+    <color name="ps_purple_main">#592E83</color>
+    <color name="ps_accent">#9969C7</color>
+    <color name="ps_gradient_start">#101025</color>
+    <color name="ps_gradient_end">#592E83</color>
+    <color name="alert_red">#D32F2F</color>
+    <color name="safe_green">#388E3C</color>
+</resources>
