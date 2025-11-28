@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
-    android:background="@drawable/background_gradient">
+    android:background="@drawable/background_gradient"
+    android:padding="20dp">
 
     <EditText
         android:id="@+id/etNameRegister"
@@ -12,12 +12,13 @@
         android:layout_height="48dp"
         android:hint="Nombre de Usuario"
         android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/etEmailRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        android:textColorHint="#FFFFFF"/>
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
         android:id="@+id/etEmailRegister"
@@ -26,11 +27,12 @@
         android:layout_marginTop="16dp"
         android:hint="Correo Electrónico"
         android:inputType="textEmailAddress"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/etPasswordRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNameRegister"
-        android:textColorHint="#FFFFFF"/>
+        app:layout_constraintTop_toBottomOf="@+id/etNameRegister" />
 
     <EditText
         android:id="@+id/etPasswordRegister"
@@ -39,11 +41,12 @@
         android:layout_marginTop="16dp"
         android:hint="Contraseña"
         android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/btnDoRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmailRegister"
-        android:textColorHint="#FFFFFF"/>
+        app:layout_constraintTop_toBottomOf="@+id/etEmailRegister" />
 
     <Button
         android:id="@+id/btnDoRegister"
@@ -58,14 +61,32 @@
 
     <Button
         android:id="@+id/btnBackToLogin"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Ya tengo cuenta (Iniciar Sesión)"
-        style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDoRegister" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="58dp"
+        android:text="REGISTRO"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/etNameRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

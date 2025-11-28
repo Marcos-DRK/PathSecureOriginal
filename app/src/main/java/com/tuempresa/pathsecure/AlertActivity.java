@@ -65,5 +65,6 @@ public class AlertActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        super.onBackPressed();
     }
 }

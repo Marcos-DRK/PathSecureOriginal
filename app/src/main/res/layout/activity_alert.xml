@@ -51,7 +51,7 @@
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_margin="30dp"
-        android:backgroundTint="#4CAF50"
+        android:backgroundTint="#673AB7"
         android:text="ESTOY BIEN CANCELAR"
         android:textSize="20sp"
         android:textStyle="bold"

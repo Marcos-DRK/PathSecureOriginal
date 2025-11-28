@@ -9,21 +9,24 @@
     <EditText
         android:id="@+id/inputContactName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Nombre Completo"
-        android:textColorHint="#FFFFFF"/>
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"/>
     <EditText
         android:id="@+id/inputContactPhone"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:inputType="phone"
         android:hint="Número de Teléfono"
-        android:textColorHint="#FFFFFF"/>
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"/>
     <EditText
         android:id="@+id/inputContactEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:inputType="textEmailAddress"
         android:hint="Correo Electrónico (Opcional)"
-        android:textColorHint="#FFFFFF"/>
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"/>
 </LinearLayout>
