@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">PathSecure</string>
         <string name="default_web_client_id">1053637109233-7enbsvr51mbuecr15fakcdrmjhbhvvo9.apps.googleusercontent.com</string>
+    <string name="Iniciar_Sesión">Iniciar Sesión</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Olvidaste_tu_contraseña">¿Olvidaste tu contraseña?</string>
+    <string name="Correo_Electrónico">Correo Electrónico</string>
+    <string name="Registrarse">Registrarse</string>
+    <string name="Acceder_con_Google">Acceder con Google</string>
+    <string name="PATHSECURE">PATHSECURE</string>
 </resources>
