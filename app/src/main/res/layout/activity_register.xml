@@ -9,7 +9,7 @@
     <EditText
         android:id="@+id/etNameRegister"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Nombre de Usuario"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/etEmailRegister"
@@ -22,7 +22,7 @@
     <EditText
         android:id="@+id/etEmailRegister"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:hint="Correo Electrónico"
         android:inputType="textEmailAddress"
@@ -35,7 +35,7 @@
     <EditText
         android:id="@+id/etPasswordRegister"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:hint="Contraseña"
         android:inputType="textPassword"
